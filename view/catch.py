@@ -12,7 +12,7 @@ async def wild_encounter(pokemon, trainer):
     print(f'''En vill {wild_pokemon.name} dukket opp!''')
     await asyncio.sleep(2)
     
-    while inp not in ['', '1', '2']:
+    while inp != '2' or inp != '1':
         os.system('cls')
         inp = input(f'''{wild_pokemon.sprite}
 
